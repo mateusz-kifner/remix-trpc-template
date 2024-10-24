@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import useColorScheme, { colorSchemes } from "@/components/ui/useColorScheme";
 import { useId } from "react";
-import { MoonIcon, SunIcon } from "lucide-react";
+import { IconMoon, IconSun } from "@tabler/icons-react";
 import useTheme from "./useTheme";
 
 function ThemeToggle() {
@@ -23,8 +23,8 @@ function ThemeToggle() {
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
 				<Button variant="outline" size="icon">
-					<SunIcon className="dark:-rotate-90 size-5 rotate-0 scale-100 transition-all dark:scale-0" />
-					<MoonIcon className="absolute size-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+					<IconSun className="dark:-rotate-90 size-5 rotate-0 scale-100 transition-all dark:scale-0" />
+					<IconMoon className="absolute size-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
 					<span className="sr-only">Toggle theme</span>
 				</Button>
 			</DropdownMenuTrigger>
